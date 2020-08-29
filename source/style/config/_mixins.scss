@@ -1,0 +1,52 @@
+$font-stack: 'Lato', sans-serif;
+
+@mixin nav-text {
+    font-family: $font-stack;
+    font-weight: 400;
+    font-size: calc(10px + .13vw);
+    color: #FFFFFF;
+}
+
+@mixin title-text {
+    font-family: $font-stack;
+    font-weight: bold;
+    font-size: calc(10px + .13vw);
+    color: #777777;
+}
+
+@mixin main-text {
+    font-family: $font-stack;
+    font-weight: bold;
+    font-size: calc(16px + .1vw);
+    color: #777777;
+}
+
+@mixin arrows-text {
+    font-family: $font-stack;
+    font-weight: bold;
+    font-size: calc(10px + .13vw);
+    color: #BFBFBF;
+}
+
+@mixin big-text {
+    font-family: $font-stack;
+    font-weight: 900;
+    font-size: calc(10px + .13vw);
+    color: #777777;
+}
+
+//==============================traingle=============================//
+
+@mixin traingle-aside {
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #FC755B;
+    transform: rotate(90deg);
+}
+
+@mixin traingle-navbar {
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #FC755B;
+
+}

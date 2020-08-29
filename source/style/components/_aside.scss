@@ -1,0 +1,259 @@
+.aside__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 266px;
+    background: linear-gradient(77deg, rgb(253, 82, 114) 0%, rgb(234, 109, 84) 100%);
+}
+
+.aside__menu {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aside__traingle--users {
+    position: absolute;
+    top: 43px;
+    left: 45px;
+    content: '';
+    display: none;
+    @include traingle-aside;
+}
+
+.aside__container--useres:hover {
+    .aside__traingle--users {
+        display: block;
+    }
+}
+
+.aside__traingle--chat {
+    position: absolute;
+    top: 43px;
+    left: 130px;
+    content: '';
+    display: none;
+    @include traingle-aside;
+}
+
+.aside__container--chat:hover {
+    .aside__traingle--chat {
+        display: block;
+    }
+}
+
+.aside__traingle--like {
+    position: absolute;
+    top: 43px;
+    left: 220px;
+    content: '';
+    display: none;
+    @include traingle-aside;
+}
+
+.aside__container--like:hover {
+    .aside__traingle--like {
+        display: block;
+    }
+}
+
+.aside__link {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 47px;
+
+    &:hover {
+        box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px #ffffff;
+        border-radius: 10%;
+    }
+}
+
+.aside__link-img {
+    width: 20px;
+    height: 16px;
+}
+
+.aside__link--users {
+    background: url(/source/img/aside/users-icon.png) center center no-repeat;
+}
+
+.aside__link--chat {
+    background: url(/source/img/aside/chat-avatar-icon.png) center center no-repeat;
+}
+
+.aside__link--like {
+    background: url(/source/img/aside/like-icon.png) center center no-repeat;
+}
+
+.aside__main {
+    display: flex;
+    flex-direction: column;
+
+    .aside__friends {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        height: 470px;
+        overflow: scroll;
+
+        .aside__line {
+            width: 85%;
+            height: 1px;
+            margin: 0 auto;
+            background: #F1F1F1;
+        }
+
+        .aside__person {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 10px 19px 20px;
+
+            .information {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 175px;
+                padding-left: 15px;
+
+                h3 {
+                    @include main-text;
+                }
+
+                span {
+                    @include nav-text;
+                    color: #C8C8C8;
+                }
+            }
+
+            a {
+                width: 20px;
+                height: 16px;
+                background: url(/source/img/aside/chat-icon.png);
+            }
+        }
+
+        .aside__person--avatar {
+            width: 42px;
+        }
+
+        .aside__person:hover {
+            background: #e7e7e7;
+        }
+    }
+
+    .aside__form {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+
+        border-top: 1px solid #F1F1F1;
+        border-bottom: 1px solid #F1F1F1;
+        background: #FCFCFC;
+
+        .search__text {
+            width: 170px;
+            border: none;
+            border-bottom: 1px solid #E9E9E9;
+        }
+
+        .search__text::placeholder {
+            @include nav-text;
+            font-weight: 300;
+            font-size: 10px;
+            color: #C0C0C0;
+        }
+
+        .search__submit {
+            width: 20px;
+            height: 20px;
+            margin: 0px 10px;
+            background: url(/source/img/header/zoom-icon.png) center center no-repeat;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search__reset {
+            width: 20px;
+            height: 20px;
+            margin-right: 7px;
+            background: url(/source/img/aside/pen-icon.png) center center no-repeat;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    .aside__company {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+            margin: 27px 0;
+            @include main-text;
+        }
+
+        .aside__links {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0;
+
+            .aside__links--top {
+                display: flex;
+
+                .aside__link--rdio {
+                    width: 55px;
+                    height: 55px;
+                    background: url(/source/img/aside/soc-icon/rdio-icon.png) center center no-repeat;
+                }
+
+                .aside__link--css-3 {
+                    width: 55px;
+                    height: 55px;
+                    background: url(/source/img/aside/soc-icon/css--icon.png) center center no-repeat;
+                }
+
+                .aside__link--deviantart {
+                    width: 55px;
+                    height: 55px;
+                    background: url(/source/img/aside/soc-icon/deviantart-icon.png) center center no-repeat;
+                }
+
+                .aside__link--top {
+                    margin: 5px;
+                    margin-bottom: 2px;
+                }
+            }
+
+            .aside__links--bottom {
+                display: flex;
+
+                .aside__link--xing {
+                    width: 55px;
+                    height: 55px;
+                    background: url(/source/img/aside/soc-icon/xing-icon.png) center center no-repeat;
+                }
+
+                .aside__link--vimeo {
+                    width: 55px;
+                    height: 55px;
+                    background: url(/source/img/aside/soc-icon/vimeo-icon.png) center center no-repeat;
+                }
+
+                .aside__link--vk {
+                    width: 55px;
+                    height: 55px;
+                    background: url(/source/img/aside/soc-icon/vk-icon.png) center center no-repeat;
+                }
+
+                .aside__link--bottom {
+                    margin: 5px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,170 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    min-height: 100vh;
+}
+
+.navbar__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(77deg, rgb(253, 54, 127) 0%, rgb(225, 109, 87) 100%);
+}
+
+.navbar__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+    @include nav-text;
+
+    &:hover {
+        box-shadow: inset 1px 3px 1px #e7d5d5, 1px 3px 5px #ffffff;
+    }
+}
+
+.navbar__menu {
+    position: relative;
+}
+
+.navbar__traingle--home {
+    position: absolute;
+    top: 33px;
+    left: 70px;
+    display: none;
+    content: '';
+    @include traingle-navbar;
+}
+
+.navbar__container--home:hover {
+    .navbar__traingle--home {
+        display: block;
+    }
+}
+
+.navbar__traingle--stactics {
+    position: absolute;
+    top: 99px;
+    left: 70px;
+    display: none;
+    content: '';
+    @include traingle-navbar;
+}
+
+.navbar__container--stactics:hover {
+    .navbar__traingle--stactics {
+        display: block;
+    }
+}
+
+.navbar__traingle--users {
+    position: absolute;
+    top: 171px;
+    left: 70px;
+    display: none;
+    content: '';
+    @include traingle-navbar;
+}
+
+.navbar__container--users:hover {
+    .navbar__traingle--users {
+        display: block;
+    }
+}
+
+.navbar__traingle--settings {
+    position: absolute;
+    top: 241px;
+    left: 70px;
+    display: none;
+    content: '';
+    @include traingle-navbar;
+}
+
+.navbar__container--settings:hover {
+    .navbar__traingle--settings {
+        display: block;
+    }
+}
+
+.navbar__traingle--quires {
+    position: absolute;
+    top: 311px;
+    left: 70px;
+    display: none;
+    content: '';
+    @include traingle-navbar;
+}
+
+.navbar__container--quires:hover {
+    .navbar__traingle--quires {
+        display: block;
+    }
+}
+
+/*=====================================Navbar icon=====================================*/
+
+
+.logo__icon {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: url(/source/img/nav/logo-icon.png) center center no-repeat;
+    box-shadow: 8px 9px 7px -9px #000000;
+}
+
+.navbar__link--home {
+    background: url(/source/img/nav/home-icon.png) center center no-repeat;
+}
+
+.navbar__link--stactics {
+    background: url(/source/img/nav/stactics-icon.png) center center no-repeat;
+}
+
+.navbar__link--users {
+    background: url(/source/img/nav/users-icon.png) center center no-repeat;
+}
+
+.navbar__link--settings {
+    background: url(/source/img/nav/settings-icon.png) center center no-repeat;
+}
+
+.navbar__link--quires {
+    background: url(/source/img/nav/quires-icon.png) center center no-repeat;
+}
+
+.navbar__exit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.navbar__exit--btn {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    outline: none;
+    background: url(/source/img/nav/power-button-icon.png) center center no-repeat;
+
+    &:hover {
+        width: 20px;
+        height: 20px;
+        background: url(/source/img/nav/power-button-icon.png) center center no-repeat;
+        transform: rotate(180deg);
+    }
+}
+

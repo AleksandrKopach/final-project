@@ -1,0 +1,205 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.profile__mobile {
+    display: none;
+}
+
+.header__left-holder {
+    display: flex;
+    margin-right: auto;
+}
+
+.header__right-holder {
+    display: flex;
+    margin-left: auto;
+}
+
+.top__section {
+    width: 60px;
+    height: 70px;
+
+    &:hover {
+        border-radius: 5%;
+        box-shadow: inset 0px 0px 6px 0px rgb(255, 80, 211);
+        transition: .15s;
+    }
+}
+
+.top__section--left {
+    border-right: 1px solid #F1F1F1;
+}
+
+.top__section--right {
+    border-left: 1px solid #F1F1F1;
+}
+
+.top__section--rounded {
+    width: 70px;
+    background: url(/source/img/header/rounded-icon.png) center center no-repeat;
+}
+
+.top__section--folder {
+    background: url(/source/img/header/folder-icon.png) center center no-repeat;
+}
+
+.top__section--settings {
+    background: url(/source/img/header/settings-icon.png) center center no-repeat;
+}
+
+.top__section-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 299px;
+    height: 34px;
+    background: #F8F8F8;
+    border: 1px solid #EBEBEB;
+    border-radius: 100px;
+
+    input {
+        width: 90%;
+        border: none;
+        background: #F8F8F8;
+    }
+
+    .top__section--zoom {
+        width: 16px;
+        height: 16px;
+        background: url(/source/img/header/zoom-icon.png);
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.top__section--upload {
+    background: url(/source/img/header/upload-icon.png) center center no-repeat;
+}
+
+.top__section--envelope {
+    background: url(/source/img/header/envelope-icon.png) center center no-repeat;
+}
+
+.top__section--planet {
+    background: url(/source/img/header/planet-earth-icon.png) center center no-repeat;
+}
+
+.top__section--profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 230px;
+}
+
+.top__section--data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+        @include main-text;
+        font-size: 13px;
+        background: linear-gradient(77deg, #fd5272 0%, #ea6d54 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    span {
+        @include nav-text;
+        color: #BFBFBF;
+    }
+}
+
+.top__section--points {
+    width: 5px;
+    height: 18px;
+    padding-right: 25px;
+    background: url(/source/img/header/ellipse-icon.png) center center no-repeat;
+}
+
+.header__bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .daily {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 19px;
+        margin-bottom: 22px;
+
+        .daily__title {
+            @include title-text;
+        }
+
+        .daily__money {
+            @include title-text;
+            font-size: 20px;
+            background: linear-gradient(77deg, rgb(155, 31, 53) 0%, rgb(221, 82, 54) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .daily__money--text {
+            @include title-text;
+            background: linear-gradient(77deg, rgb(155, 31, 53) 0%, rgb(221, 82, 54) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .daily__levels {
+            display: flex;
+
+            .daily__level {
+                position: relative;
+                @include arrows-text;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    top: 7px;
+                    left: -7px;
+                    width: 2px;
+                    height: 0px;
+    
+                    border-right: transparent 2px solid;
+                    border-bottom: 5px solid #A889E9;
+                    border-left: transparent 2px solid;
+                }
+            }
+
+            .daily__level-two {
+                position: relative;
+                margin-left: 10px;
+                @include arrows-text;
+
+                &::before {
+                    position: absolute;
+                    top: 7px;
+                    content: '';
+                    left: -7px;
+                    width: 2px;
+                    height: 0px;
+    
+                    border-top: 5px solid #FD5670;
+                    border-right: 2px solid transparent;
+                    border-left: 2px solid transparent;
+                }
+            }
+        }
+    }
+}

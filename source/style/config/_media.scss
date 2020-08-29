@@ -1,0 +1,544 @@
+@media (max-width: 1180px) {
+    .main__bottom {
+        flex-direction: column;
+    }
+
+    .main__bottom-right {
+        align-items: center;
+    }
+
+    .analysis {
+        justify-content: center;
+    }
+
+    .analysis .analysis__card {
+        width: 100%;
+        height: 250px;
+        border-radius: 10%;
+
+        img {
+            width: 250px;
+            margin: 10px 0;
+            padding: 0;
+        }
+    }
+
+    .task {
+        width: 100%;
+        height: 252px;
+        margin: 24px auto 10px auto;
+        padding: 20px;
+        border-radius: 5%/20%;
+        text-align: center;
+        transition: .5s;
+    }
+}
+
+/*===================================================iPad pro=============================================*/
+
+@media (max-width: 1024px) {
+    .container__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__bottom-left {
+        border-radius: 10%;
+    }
+
+    .monthly__btns {
+        margin-left: 0px;
+    }
+
+    .container__reviews {
+        padding: 30px;
+
+        h3 {
+            font-size: calc(16px + 1.4vw);
+            text-align: center;
+        }
+    }
+
+    .reviews {
+        width: 641px;
+        margin: 0 auto;
+    }
+
+    .analysis {
+        padding-left: 0px;
+    }
+
+    .msturner__title--profile  span {
+        font-size: 16px;
+    }
+
+    .additionally__comment--top  span {
+        font-size: 16px;
+    }
+
+    .additionally__comment--bottom  span {
+        font-size: 17px;
+    }
+
+    .mrquill__title--comment  span {
+        font-size: 16px;
+    }
+
+    aside {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .aside__container {
+        width: 95%;
+        margin: 0 auto;
+        transition: .5s;
+    }
+
+    .aside__main {
+        .aside__company {
+            display: flex;
+            flex-direction: row;
+
+            h3 {
+                margin: 27px 72px 0 72px;
+            }
+        }
+
+        .aside__friends {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+    }
+
+    .top__monthly {
+        border-radius: 8%/20%;
+    }
+
+    .top__hour {
+        border-radius: 20%/15%;
+    }
+
+    .aside__line {
+        display: none;
+    }
+
+    .aside__links--top {
+        transform: rotate(360deg);
+    }
+
+    .header__bottom {
+        width: 100%;
+        justify-content: normal;
+        align-items: center;
+        margin: 0 auto;
+        background: #f0f0f0;
+        border-radius: 0% 10% 10% 0%;
+        overflow: scroll;
+    }
+
+    .daily {
+        width: 100%;
+        margin-right: 17px;
+        padding: 0 20px;
+    }
+
+    .aside__link--top {
+        transform: rotate(-2850deg);
+        transition: transform 20s 3s;
+    }
+
+    .aside__link--bottom {
+        margin-top: 2px;
+        transform: rotate(-2500deg);
+        transition: transform 20s 3s;
+    }
+
+    .aside__links {
+        flex-direction: column;
+    }
+}
+/*====================================iPad=========================================*/
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .header__top {
+        justify-content: center;
+    }
+
+    .header__burger {
+        transform: rotate(2880deg);
+        transition: 2s;
+    }
+
+    .top__section-search {
+        display: none;
+    }
+
+    .header__left-holder {
+        margin: 0;
+    }
+
+    .header__right-holder {
+        margin: 0;
+    }
+
+    .top__section--left {
+        width: 13vw;
+    }
+
+    .top__section--right {
+        width: 13vw;
+    }
+
+    .top__section--profile {
+        display: none;
+    }
+
+    .header__burger {
+            display: block;
+    }
+
+    .profile__mobile {
+        display: flex;
+
+        .profile__mobile--avatar {
+            width: 20px;
+            height: 20px;
+            background: url(/source/img/header/kendall-avatar.png) center center no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+        }
+
+        .profile__mobile--find {
+            width: 17px;
+            height: 17px;
+            background: url(/source/img/header/zoom-icon.png) center center no-repeat;
+            background-size: cover;
+            margin-right: 4px;
+        }
+    }
+
+    .main__top {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .top__monthly {
+        justify-content: center;
+        max-width: 440px;
+        border-radius: 10%;
+    }
+
+    .monthly__menu {
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+
+        h3 {
+            font-size: calc(16px + 0.1vw);
+        }
+    }
+
+    .monthly__btn {
+        margin-right: calc(5px + 0.1vw);
+    }
+
+    .graph__img {
+        width: 428px;
+        height: 62px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        background: url(/source/img/main/line-image) center center no-repeat;
+    }
+
+    .top__hour {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 10px;
+        border-radius: 10%;
+    }
+
+    .main__bottom-left {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container__reviews {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .reviews {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .task {
+        align-content: space-between;
+        margin: 20px 0 10px 0;
+        padding: 20px;
+        width: 90%;
+        height: 275px;
+        border-radius: 10%;
+        text-align: center;
+        transition: .5s;
+
+        ul {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    .analysis {
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .monthly__menu .monthly__btns {
+        margin: 0;
+    }
+
+    .mouthly__graph {
+        width: 100%;
+        padding-left: 20px;
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 700px) {
+    .main__top {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .top__monthly {
+        display: flex;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .top__hour {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 567px) {
+    .top__hour {
+        margin-left: 0px;
+    }
+
+    .analysis {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .analysis__card--second {
+        margin: 0;
+    }
+
+    .analysis .analysis__card--second {
+        margin: 20px 0 auto;
+    }
+
+    .main__bottom-left {
+        height: 580px;
+    }
+
+    .reviews__msturner .msturner__title {
+        flex-direction: column;
+    }
+
+    .msturner__title--profile {
+        align-items: center;
+
+        span {
+            margin-bottom: 6px;
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+
+    .msturner__title--profile img {
+        width: 50px;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 539px) {
+    .main__bottom-left {
+        height: 620px;
+    }
+
+    .task {
+        height: 340px;
+    }
+
+    .aside__main .aside__company h3 {
+        margin: 27px 25px 0 23px;
+    }
+}
+
+@media (max-width: 475px) {
+    .reviews__msturner .msturner__additionally .additionally__block {
+        margin-left: 34px;
+        margin-right: 12px;
+    }
+
+    .task {
+        ul {
+            li {
+                display: flex;
+                flex-direction: column;
+
+                .task__btn {
+                    margin: 2px 0;
+                }
+
+                h3 {
+                    order: -2;
+                }
+
+                span {
+                    margin: 2px;
+                }
+            }
+        }
+
+        span {
+            margin: 2px 0;
+        }
+    }
+
+    .task h3 {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 439px) {
+    .container {
+        overflow: hidden;
+    }
+
+    .top__section {
+        width: 40px;
+    }
+
+    .top__section-search {
+        display: none;
+    }
+
+    .top__section--left {
+        border: none;
+    }
+
+    .top__section--right {
+        border: none;
+    }
+
+    .main__bottom-left {
+        height: 665px;
+    }
+
+    .container__reviews {
+        padding: 20px;
+    }
+
+    .main__top {
+        width: 100%;
+    }
+
+    .main__bottom-left {
+        width: 100%;
+    }
+
+    .task {
+        width: 100%;
+    }
+
+    .analysis {
+        width: 100%;
+    }
+}
+
+/*====================================iphone X================================*/
+
+@media (max-width: 375px) {
+    .common__title {
+        flex-direction: column;
+        align-items: center;
+
+        .common__title--profile {
+            img {
+                margin-left: 0;
+                border-radius: 50%;
+            }
+
+            span {
+                margin: 3px 0;
+            }
+        }
+
+        .common__comment {
+            padding: 6px;
+        }
+    }
+
+    .additionally__comment--top {
+        padding: 50px;
+    }
+
+    .aside__link--top img {
+        padding: 8px;
+    }
+}
+
+/*================================iPhone 5s ====================================*/
+
+@media (max-width: 320px) {
+    .monthly__menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header__bottom {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 0% 10% 10% 0;
+    }
+
+    .daily__title {
+        color: #c9c9c9;
+    }
+
+    .aside__links--bottom {
+        margin: 0 10px;
+    }
+
+    .main__bottom-left {
+        height: 717px;
+    }
+
+    .task {
+        width: 100%;
+        height: 375px;
+    }
+
+    .aside__main .aside__company .aside__links {
+        margin-right: 4px;
+    }
+}
+
