@@ -76,7 +76,7 @@
     .top__section--zoom {
         width: 16px;
         height: 16px;
-        background: url(/source/img/header/zoom-icon.png);
+        background: url(./source/img/header/zoom-icon.png);
         text-decoration: none;
         border: none;
         cursor: pointer;
@@ -88,11 +88,11 @@
 }
 
 .top__section--envelope {
-    background: url(/source/img/header/envelope-icon.png) center center no-repeat;
+    background: url(./source/img/header/envelope-icon.png) center center no-repeat;
 }
 
 .top__section--planet {
-    background: url(/source/img/header/planet-earth-icon.png) center center no-repeat;
+    background: url(./source/img/header/planet-earth-icon.png) center center no-repeat;
 }
 
 .top__section--profile {
@@ -126,7 +126,7 @@
     width: 5px;
     height: 18px;
     padding-right: 25px;
-    background: url(/source/img/header/ellipse-icon.png) center center no-repeat;
+    background: url(./source/img/header/ellipse-icon.png) center center no-repeat;
 }
 
 .header__bottom {
