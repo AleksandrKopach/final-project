@@ -110,10 +110,7 @@
     h3 {
         @include main-text;
         font-size: 13px;
-        background: linear-gradient(77deg, #fd5272 0%, #ea6d54 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #ea6d54;
     }
 
     span {
