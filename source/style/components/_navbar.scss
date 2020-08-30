@@ -120,28 +120,28 @@
     display: block;
     width: 70px;
     height: 70px;
-    background: url(./source/img/nav/logo-icon.png) center center no-repeat;
+    background: url(../img/nav/logo-icon.png) center center no-repeat;
     box-shadow: 8px 9px 7px -9px #000000;
 }
 
 .navbar__link--home {
-    background: url(./source/img/nav/home-icon.png) center center no-repeat;
+    background: url(../img/nav/home-icon.png) center center no-repeat;
 }
 
 .navbar__link--stactics {
-    background: url(./source/img/nav/stactics-icon.png) center center no-repeat;
+    background: url(../img/nav/stactics-icon.png) center center no-repeat;
 }
 
 .navbar__link--users {
-    background: url(./source/img/nav/users-icon.png) center center no-repeat;
+    background: url(../img/nav/users-icon.png) center center no-repeat;
 }
 
 .navbar__link--settings {
-    background: url(/source/img/nav/settings-icon.png) center center no-repeat;
+    background: url(../img/nav/settings-icon.png) center center no-repeat;
 }
 
 .navbar__link--quires {
-    background: url(./source/img/nav/quires-icon.png) center center no-repeat;
+    background: url(../img/nav/quires-icon.png) center center no-repeat;
 }
 
 .navbar__exit {
@@ -158,12 +158,12 @@
     height: 20px;
     cursor: pointer;
     outline: none;
-    background: url(./source/img/nav/power-button-icon.png) center center no-repeat;
+    background: url(../img/nav/power-button-icon.png) center center no-repeat;
 
     &:hover {
         width: 20px;
         height: 20px;
-        background: url(./source/img/nav/power-button-icon.png) center center no-repeat;
+        background: url(../img/nav/power-button-icon.png) center center no-repeat;
         transform: rotate(180deg);
     }
 }
