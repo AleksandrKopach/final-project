@@ -125,23 +125,23 @@
 }
 
 .navbar__link--home {
-    background: url(../img/nav/home-icon.png) center center no-repeat;
+    background: url(./img/nav/home-icon.png) center center no-repeat;
 }
 
 .navbar__link--stactics {
-    background: url(../img/nav/stactics-icon.png) center center no-repeat;
+    background: url(./img/nav/stactics-icon.png) center center no-repeat;
 }
 
 .navbar__link--users {
-    background: url(../img/nav/users-icon.png) center center no-repeat;
+    background: url(./img/nav/users-icon.png) center center no-repeat;
 }
 
 .navbar__link--settings {
-    background: url(../img/nav/settings-icon.png) center center no-repeat;
+    background: url(./img/nav/settings-icon.png) center center no-repeat;
 }
 
 .navbar__link--quires {
-    background: url(../img/nav/quires-icon.png) center center no-repeat;
+    background: url(./img/nav/quires-icon.png) center center no-repeat;
 }
 
 .navbar__exit {
@@ -158,12 +158,12 @@
     height: 20px;
     cursor: pointer;
     outline: none;
-    background: url(../img/nav/power-button-icon.png) center center no-repeat;
+    background: url(./img/nav/power-button-icon.png) center center no-repeat;
 
     &:hover {
         width: 20px;
         height: 20px;
-        background: url(../img/nav/power-button-icon.png) center center no-repeat;
+        background: url(./img/nav/power-button-icon.png) center center no-repeat;
         transform: rotate(180deg);
     }
 }
